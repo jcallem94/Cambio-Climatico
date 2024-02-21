@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../JS/JavaS.js">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="menu-hamburguesa">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </div>
+              
+            <div class="barra-lateral">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Ajustes</a></li>
+                </ul>
+            </div>
+            <h1>Calentamiento global</h1>
+            <script>
+            const menuHamburguesa = document.querySelector('.menu-hamburguesa');
+            const barraLateral = document.querySelector('.barra-lateral');
+            menuHamburguesa.addEventListener('click', () => {
+                menuHamburguesa.classList.toggle('unactive');
+                barraLateral.classList.toggle('unactive'); // Sincroniza la clase con el botón
+            });
+            </script>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            Una aportacion
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            Contacto
+        </div>
+    </footer>
+</body>
+</html>
