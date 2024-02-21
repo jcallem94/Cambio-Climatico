@@ -61,15 +61,15 @@ body {
 }
   
 /* Animación del icono hamburguesa */
-.menu-hamburguesa.unactive span:first-child {
+.menu-hamburguesa.active span:first-child {
     transform: rotate(45deg) translate(8px, 6px);
 }
   
-.menu-hamburguesa.unactive span:last-child {
+.menu-hamburguesa.active span:last-child {
     transform: rotate(-45deg) translate(8px, -6px);
 }
   
-.menu-hamburguesa.unactive span:nth-child(2) {
+.menu-hamburguesa.active span:nth-child(2) {
     opacity: 0;
 }
   
@@ -86,8 +86,8 @@ body {
     overflow-y: auto;
 }
   
-.menu-hamburguesa.unactive .barra-lateral {
-    left: 100%;
+.menu-hamburguesa.active .barra-lateral {
+    left: 0%;
 }
   
 .barra-lateral ul {
@@ -105,7 +105,7 @@ body {
     font-size: 16px;
 }
   
-.barra-lateral ul li a.unactive {
+.barra-lateral ul li a.active {
     color: #333;
 }
   

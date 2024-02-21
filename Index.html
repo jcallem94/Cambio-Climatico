@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../JS/JavaS.js">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -16,7 +15,7 @@
                 <span class="linea"></span>
             </div>
               
-            <div class="barra-lateral">
+            <div class="barra-lateral active">
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Acerca de</a></li>
@@ -25,15 +24,15 @@
                 </ul>
             </div>
             <h1>Calentamiento global</h1>
-            <script>
+        </div>
+        <script>
             const menuHamburguesa = document.querySelector('.menu-hamburguesa');
             const barraLateral = document.querySelector('.barra-lateral');
             menuHamburguesa.addEventListener('click', () => {
-                menuHamburguesa.classList.toggle('unactive');
-                barraLateral.classList.toggle('unactive'); // Sincroniza la clase con el botón
+                menuHamburguesa.classList.toggle('active');
+                barraLateral.classList.toggle('active'); // Sincroniza la clase con el botón
             });
-            </script>
-        </div>
+        </script>
     </header>
     <main>
         <div class="main">
