@@ -86,8 +86,8 @@ body {
     overflow-y: auto;
 }
   
-.menu-hamburguesa.active .barra-lateral {
-    left: 0%;
+.barra-lateral.active {
+    left: -100%;
 }
   
 .barra-lateral ul {
